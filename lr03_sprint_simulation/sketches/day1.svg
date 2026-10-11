@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850">
+<rect width="1200" height="850" fill="#f4f7fb"/>
+<g font-family="Segoe UI, sans-serif" fill="#172a42">
+<text x="30" y="40" font-size="25">ЛР3 · День 1 · Три кроки кожної готової історії</text>
+<text x="30" y="70" font-size="16">Навчальні ескізи. Прикладові дані. Це не екрани готового продукту.</text>
+<text x="30" y="110" font-size="21" font-weight="bold">S-01 · Особистий вхід</text>
+<rect x="30" y="128" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="46" y="160" font-size="18" font-weight="bold">1. Вхід редактора</text>
+<text x="46" y="194" font-size="15">Акаунт: editor@example.test</text>
+<text x="46" y="221" font-size="15">Пароль: ••••••••</text>
+<text x="46" y="248" font-size="15">[ Увійти ]</text>
+<text x="390" y="215" font-size="27">→</text>
+<rect x="425" y="128" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="441" y="160" font-size="18" font-weight="bold">2. Перевірка</text>
+<text x="441" y="194" font-size="15">Неправильні дані → помилка</text>
+<text x="441" y="221" font-size="15">Правильні → особистий кабінет</text>
+<text x="785" y="215" font-size="27">→</text>
+<rect x="820" y="128" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="836" y="160" font-size="18" font-weight="bold">3. Кабінет редактора</text>
+<text x="836" y="194" font-size="15">Ви увійшли своїм акаунтом</text>
+<text x="836" y="221" font-size="15">[ Сторінки ]  [ Вийти ]</text>
+<text x="30" y="350" font-size="21" font-weight="bold">S-03 · Редагування без HTML</text>
+<rect x="30" y="368" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="46" y="400" font-size="18" font-weight="bold">1. Відкрити сторінку</text>
+<text x="46" y="434" font-size="15">Сторінка: Про кафедру</text>
+<text x="46" y="461" font-size="15">[ Редагувати текст ]</text>
+<text x="390" y="455" font-size="27">→</text>
+<rect x="425" y="368" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="441" y="400" font-size="18" font-weight="bold">2. Змінити текст</text>
+<text x="441" y="434" font-size="15">B   I   Список</text>
+<text x="441" y="461" font-size="15">Оновлений опис кафедри</text>
+<text x="441" y="488" font-size="15">[ Зберегти ]</text>
+<text x="785" y="455" font-size="27">→</text>
+<rect x="820" y="368" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="836" y="400" font-size="18" font-weight="bold">3. Відкрити знову</text>
+<text x="836" y="434" font-size="15">Оновлений опис кафедри</text>
+<text x="836" y="461" font-size="15">Збережені зміни відображено</text>
+<text x="30" y="590" font-size="21" font-weight="bold">S-08 · Профіль викладача</text>
+<rect x="30" y="608" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="46" y="640" font-size="18" font-weight="bold">1. Обрати викладача</text>
+<text x="46" y="674" font-size="15">Кафедра → Викладачі</text>
+<text x="46" y="701" font-size="15">[ Викладач А ]</text>
+<text x="390" y="695" font-size="27">→</text>
+<rect x="425" y="608" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="441" y="640" font-size="18" font-weight="bold">2. Профіль</text>
+<text x="441" y="674" font-size="15">Викладач А · доцент</text>
+<text x="441" y="701" font-size="15">Коротка інформація</text>
+<text x="785" y="695" font-size="27">→</text>
+<rect x="820" y="608" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="836" y="640" font-size="18" font-weight="bold">3. Дисципліни</text>
+<text x="836" y="674" font-size="15">Управління ІТ проєктами</text>
+<text x="836" y="701" font-size="15">Інженерія програмного забезпечення</text>
+</g></svg>

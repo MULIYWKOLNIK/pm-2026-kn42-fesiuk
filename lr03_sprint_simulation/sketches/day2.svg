@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610">
+<rect width="1200" height="610" fill="#f4f7fb"/>
+<g font-family="Segoe UI, sans-serif" fill="#172a42">
+<text x="30" y="40" font-size="25">ЛР3 · День 2 · Ескізи до конверта 2</text>
+<text x="30" y="70" font-size="16">Навчальна симуляція. Прикладові дані, час синхронізації умовний.</text>
+<text x="30" y="110" font-size="21" font-weight="bold">S-04 · Порівняння версій — початковий ескіз</text>
+<rect x="30" y="128" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="46" y="160" font-size="18" font-weight="bold">1. Чернетка</text>
+<text x="46" y="194" font-size="15">Текст: Новий опис кафедри</text>
+<text x="46" y="221" font-size="15">[ Порівняти ]</text>
+<text x="390" y="215" font-size="27">→</text>
+<rect x="425" y="128" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="441" y="160" font-size="18" font-weight="bold">2. Порівняння</text>
+<text x="441" y="194" font-size="15">Опубліковано: Старий опис</text>
+<text x="441" y="221" font-size="15">Чернетка: Новий опис</text>
+<text x="441" y="248" font-size="15">[ Підтвердити публікацію ]</text>
+<text x="785" y="215" font-size="27">→</text>
+<rect x="820" y="128" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="836" y="160" font-size="18" font-weight="bold">3. Публічна сторінка</text>
+<text x="836" y="194" font-size="15">Новий опис кафедри</text>
+<text x="836" y="221" font-size="15">До підтвердження: старий опис</text>
+<text x="30" y="350" font-size="21" font-weight="bold">S-10 · Розклад із таблиці кафедри</text>
+<rect x="30" y="368" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="46" y="400" font-size="18" font-weight="bold">1. Таблиця кафедри</text>
+<text x="46" y="434" font-size="15">Викладач А | Вт | 14:00</text>
+<text x="46" y="461" font-size="15">Змінити годину на 15:00</text>
+<text x="390" y="455" font-size="27">→</text>
+<rect x="425" y="368" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="441" y="400" font-size="18" font-weight="bold">2. Автоматичне оновлення</text>
+<text x="441" y="434" font-size="15">Прочитати таблицю</text>
+<text x="441" y="461" font-size="15">Перевірити рядок викладача</text>
+<text x="441" y="488" font-size="15">Помилка → позначити старі дані</text>
+<text x="785" y="455" font-size="27">→</text>
+<rect x="820" y="368" width="350" height="172" rx="12" fill="white" stroke="#9bb0ca"/>
+<text x="836" y="400" font-size="18" font-weight="bold">3. Профіль викладача</text>
+<text x="836" y="434" font-size="15">Консультація: Вт, 15:00</text>
+<text x="836" y="461" font-size="15">Оновлено: день 2, 10:05</text>
+<text x="836" y="488" font-size="15">Без ручного редагування сайту</text>
+</g></svg>
