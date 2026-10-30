@@ -44,21 +44,45 @@ def self_check():
         raise AssertionError("All-zero history must not loop forever")
 
 
+def own_forecasts(root):
+    from datetime import date, timedelta
+    def rows(path):
+        with (root / path).open(encoding="utf-8-sig", newline="") as f:
+            return list(csv.DictReader(f))
+    rel1 = {r["story_id"] for r in rows("lr06_backlog/backlog.csv") if r["release"] == "REL-1"}
+    estimates = {r["story_id"]: int(r["final_estimate"]) for r in rows("lr08_poker/estimates.csv")}
+    history = rows("lr09_forecast/velocity.csv")
+    assert len(history) >= 2 and rel1 <= estimates.keys()
+    # Accepted IDs are evidence-based, not inferred from the number of SP.
+    accepted = {"S-01"}  # review 2026-10-30, issue #13, sprints.md
+    assert sum(int(r["points_done"]) for r in history) == sum(estimates[s] for s in accepted)
+    velocity = [int(r["points_done"]) for r in history]
+    whole = sum(estimates[s] for s in rel1)
+    remaining = sum(estimates[s] for s in rel1 - accepted)
+    output = []
+    for label, points, anchor, offset in [
+        ("Весь перший реліз", whole, history[0]["end_date"], -1),
+        ("Залишок після двох спринтів", remaining, history[-1]["end_date"], 0),
+    ]:
+        result = simulate(points, velocity)
+        output.append({"scenario": label, "remaining_points": points, "simulations": RUNS,
+                       "p50_sprints": result["p50"], "p85_sprints": result["p85"],
+                       "p50_date": (date.fromisoformat(anchor)+timedelta(days=(result["p50"]+offset)*14)).isoformat(),
+                       "p85_date": (date.fromisoformat(anchor)+timedelta(days=(result["p85"]+offset)*14)).isoformat()})
+    return output
+
+
 if __name__ == "__main__":
     self_check()
     root = Path(__file__).resolve().parents[1]
-    with (root / "lr06_backlog/backlog.csv").open(encoding="utf-8-sig", newline="") as f:
-        rel1 = {r["story_id"] for r in csv.DictReader(f) if r["release"] == "REL-1"}
-    with (root / "lr08_poker/estimates.csv").open(encoding="utf-8-sig", newline="") as f:
-        estimates = {r["story_id"]: int(r["final_estimate"]) for r in csv.DictReader(f)}
-    assert rel1 <= estimates.keys(), "Missing REL-1 estimates"
-    print(json.dumps({
-        "runs": RUNS, "seed": SEED, "reference_points": 220,
+    own = own_forecasts(root)
+    with (root / "lr09_forecast/forecast.csv").open(encoding="utf-8-sig", newline="") as f:
+        saved = list(csv.DictReader(f))
+    assert saved == [{k: str(v) for k,v in row.items()} for row in own], "Saved forecast differs from calculation"
+    print(json.dumps({"runs": RUNS, "seed": SEED,
         "reference_all_12": simulate(220, REFERENCE),
         "reference_1_2": simulate(220, REFERENCE[:2]),
         "reference_5_6": simulate(220, REFERENCE[4:6]),
-        "our_rel1_points": sum(estimates[s] for s in rel1),
-        "sprint1_committed_reconciled": sum(estimates[s] for s in ["S-01", "S-03", "S-04"]),
-        "sprint2_current_committed": estimates["S-01"],
-        "own_forecast": "pending second closed sprint; reference data are not substituted"
-    }, indent=2))
+        "own_forecast": own,
+        "limitation": "Second sprint is 3 elapsed days; 14-day projection is conditional, not a reliable calendar promise."
+    }, ensure_ascii=False, indent=2))
