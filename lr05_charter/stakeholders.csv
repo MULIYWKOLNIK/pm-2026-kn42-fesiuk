@@ -5,3 +5,10 @@ ST-03,Редактор кафедри — учасник пілоту,Кафед
 ST-04,Викладач якого призначають редактором без власного запиту,Кафедра,high,low,blocker,keep_informed,PM
 ST-05,Представник вступників для перевірки мобільних сценаріїв,Вступники,high,low,supporter,keep_informed,BA
 ST-06,Нинішній технічний редактор статичних сторінок,Кафедра,high,high,neutral,manage_closely,PM
+ST-07,PM (я),Команда проєкту,high,high,supporter,manage_closely,PM
+ST-08,BA (бізнес-аналітик),Команда проєкту,high,low,supporter,keep_informed,PM
+ST-09,Dev (розробник),Команда проєкту,high,low,supporter,keep_informed,PM
+ST-10,QA (інженер з якості),Команда проєкту,high,low,supporter,keep_informed,PM
+ST-11,DevOps (інженер інфраструктури),Команда проєкту,high,low,supporter,keep_informed,PM
+ST-12,Спонсор проєкту,Університет,high,high,neutral,manage_closely,PM
+ST-13,Представник служби безпеки,Університет,low,high,neutral,keep_satisfied,PM
