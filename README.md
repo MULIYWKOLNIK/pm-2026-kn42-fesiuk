@@ -16,8 +16,8 @@
 | Варіант вхідних умов | V10 |
 | Трекер | GitHub Projects: [беклог і спринти](https://github.com/users/MULIYWKOLNIK/projects/4/views/1) |
 | Дошка | [ЛР4 — потік роботи](https://github.com/users/MULIYWKOLNIK/projects/3/views/1) |
-| Валюта проєкту | |
-| Contingency, % | |
+| Валюта проєкту | грн |
+| Contingency, % | 3 |
 
 ### Короткий опис теми
 

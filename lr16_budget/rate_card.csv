@@ -1,1 +1,6 @@
 role,fte,hours,rate,source,note
+PM,0.5,280,360,https://dou.ua/lenta/articles/salary-report-managers-summer-2026/,Middle PM — 2000 USD
+BA,0.25,140,612,https://dou.ua/lenta/articles/salary-report-data-summer-2026/,Senior BA — 3400 USD
+Dev,2,1120,450,https://dou.ua/lenta/articles/salary-report-devs-summer-2026/,Двоє Middle Dev — по 2500 USD
+QA,0.5,280,342,https://dou.ua/lenta/articles/salary-report-qa-summer-2026/,Middle QA — орієнтир 1900 USD
+DevOps,0.5,280,675,https://dou.ua/lenta/articles/salary-report-devops-summer-2026/,DevOps Engineer — 3750 USD
